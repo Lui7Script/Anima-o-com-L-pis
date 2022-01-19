@@ -1,0 +1,90 @@
+
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+    }
+
+    body{
+
+    background: linear-gradient(45deg, #ff0077, #00d9ff);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    }
+
+    .folha{
+    height: 60px;
+    width: 150px;
+    position: absolute;
+    }
+
+
+    .linha{
+    position: relative;
+    width: inherit;
+    height: inherit;
+    overflow: hidden;
+    }
+
+    .linha::before{
+    content: "kkkkkkkkkkkkk";
+    position: absolute;
+    font-size: 4rem;
+    top: -40px;
+    left: 0;
+    color: transparent;
+    text-decoration-style: wavy;
+    text-decoration-color: #fff;
+    text-decoration-line:underline;
+    animation: escrever 1s infinite linear;
+    }
+
+    @keyframes escrever {
+
+     0%{
+         
+        transform: translateY(-1px);
+    }
+
+    100%{
+
+        transform: translateX(-57px); 
+    }
+
+    }
+
+    .fa-pencil{
+        position: absolute;
+       top: 0;
+       right: -25px;
+       font-size: 2rem;
+       color: #fff ;
+       animation: lapis .5s infinite linear;
+    }
+
+    @keyframes lapis{
+    
+        0%,100% {
+
+            transform: translateY(10px);
+       } 
+        
+        50%{
+
+             transform: translateY(-10px);
+
+        }
+ 
+    }
+    
+
+
+    footer{
+    height: 200px;
+    color: black;
+    position: absolute;
+
+    }
+
